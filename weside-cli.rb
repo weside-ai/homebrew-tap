@@ -5,21 +5,21 @@
 class WesideCli < Formula
   desc "CLI for the weside.ai AI Companion Platform"
   homepage "https://weside.ai"
-  version "0.3.5"
+  version "0.3.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/weside-ai/weside-cli/releases/download/v0.3.5/weside-cli_0.3.5_darwin_amd64.tar.gz"
-      sha256 "cb175b9bf2590ddc28a5b2c24d9cbd2841fecf8cbbda9103bd647b75656a3f60"
+      url "https://github.com/weside-ai/weside-cli/releases/download/v0.3.6/weside-cli_0.3.6_darwin_amd64.tar.gz"
+      sha256 "76f1807a539703e7f8ddb00b0dcb957a25ec3326967851928bde3f441a03b22b"
 
       define_method(:install) do
         bin.install "weside"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/weside-ai/weside-cli/releases/download/v0.3.5/weside-cli_0.3.5_darwin_arm64.tar.gz"
-      sha256 "ea520c84fca2a5bc9ce122673401083b7308fb4c908d5a5a664a4a761ba0176c"
+      url "https://github.com/weside-ai/weside-cli/releases/download/v0.3.6/weside-cli_0.3.6_darwin_arm64.tar.gz"
+      sha256 "23d9755466faf4d524cc83e88c6d996457eeda57649b95a761e877c3ad201fe5"
 
       define_method(:install) do
         bin.install "weside"
@@ -29,15 +29,15 @@ class WesideCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/weside-ai/weside-cli/releases/download/v0.3.5/weside-cli_0.3.5_linux_amd64.tar.gz"
-      sha256 "62cc3598a40cbc2a63ba71767fd6c87892185638194e06eddb4595a49e41793c"
+      url "https://github.com/weside-ai/weside-cli/releases/download/v0.3.6/weside-cli_0.3.6_linux_amd64.tar.gz"
+      sha256 "829c82664f769355902485cd0925406a521afd26166ad874f91ec2a87ca01321"
       define_method(:install) do
         bin.install "weside"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/weside-ai/weside-cli/releases/download/v0.3.5/weside-cli_0.3.5_linux_arm64.tar.gz"
-      sha256 "f6d3589939f1a2ef6e01f2bbca546f23c119e2c0feb76c73047d51e18b0988f8"
+      url "https://github.com/weside-ai/weside-cli/releases/download/v0.3.6/weside-cli_0.3.6_linux_arm64.tar.gz"
+      sha256 "ee3df0d3d2ffe6843331f0eabc8ad75344583b50ff63947692c4516e7cd60e41"
       define_method(:install) do
         bin.install "weside"
       end
